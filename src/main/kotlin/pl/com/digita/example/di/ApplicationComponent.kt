@@ -7,8 +7,8 @@ import java.time.Clock
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [AutoBindingModule::class])
-interface AutoApplicationComponent {
+@Component(modules = [BindingModule::class])
+interface ApplicationComponent {
     val application: Application
 
     @Component.Builder
@@ -16,6 +16,6 @@ interface AutoApplicationComponent {
         @BindsInstance
         fun clock(clock: Clock): Builder
 
-        fun build(): AutoApplicationComponent
+        fun build(): ApplicationComponent
     }
 }
