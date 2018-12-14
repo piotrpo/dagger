@@ -1,5 +1,5 @@
 package pl.com.digita.example.implementations
 
-class WebServiceConfiguration {
+import javax.inject.Inject
 
-}
+class WebServiceConfiguration @Inject constructor()

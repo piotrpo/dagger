@@ -1,5 +1,5 @@
 package pl.com.digita.example.implementations
 
-class DatabaseConfiguration {
+import javax.inject.Inject
 
-}
+class DatabaseConfiguration @Inject constructor()

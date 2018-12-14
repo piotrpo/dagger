@@ -10,7 +10,7 @@ import pl.com.digita.example.interfaces.Repository
 import pl.com.digita.example.interfaces.WebService
 
 @Module
-abstract class Bindings {
+abstract class BindingModule {
     @Binds
     abstract fun repository(repositoryImplementation: RepositoryImplementation): Repository
 
